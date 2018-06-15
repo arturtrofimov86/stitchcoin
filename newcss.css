@@ -1,0 +1,139 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Roboto;
+}
+/*****ICONS****/
+.icon-values{
+    width:34px;
+    height:35px;
+    display:inline-block;
+}
+.icon-security{
+    background:url(images/icon-security.png);
+}
+.icon-time{
+    background:url(images/icon-time.png);
+}
+.icon-display{
+    background:url(images/icon-display.png);
+}
+/****COMMONS***/
+h1{
+    font-size:38pt;
+}
+.title-wrap{
+    max-width:600px;
+    margin:0 auto;
+    text-align:center;
+}
+.title-wrap p{
+    color:#bbbbbb;  
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h3{
+    color:black;
+    font-size: 37px;
+}
+/******HEADER****/
+.sign-in{
+    border:none;
+    width:128px;
+    height:39px;
+    background:#ebeaea;
+    border-radius: 3px;
+    color:#2203b0;
+    font-family:Roboto !important;
+    font-size:14px;
+    font-weight:700;
+}
+.fa-bars{
+    color:white;
+}
+header{
+    background-image: linear-gradient(to right top, #60059c, #5702a1, #4b00a5, #3c00aa, #2602af);
+}
+.top-navigation-header .container{
+    max-width:1350px;
+}
+header a{
+    color:#fff;
+}
+header .spn-mobile-dropdown-menu, header .ml-auto{
+    margin:0 !important;
+}
+.top-navigation-header{
+    border-bottom:1px solid #713ab2;
+}
+header .navbar{
+    width: 100%;
+    padding: 8px 1px 11px 43px;
+}
+header .nav-link{
+    font-size: 14px;
+    margin: 0 22px 0 0;
+}
+header .sign-member{
+    font-size:14px;
+    margin:0 117px 0 0;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight:700;
+}
+header a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.intro-title{
+    text-align:center;
+    color:#fff;
+    padding: 114px 0 0 0;
+}
+.intro-title p{
+    font-size: 18px;
+    margin: 18px 0 0 0;
+    line-height: 18px;
+}
+.intro-video{
+    padding-top:117px;
+    padding-bottom:83px;
+    max-width:833px;
+    margin:0 auto;
+}
+.intro-video iframe{
+    width: 100%;
+    margin-top: 5px;
+}
+/****CONTENT*****/
+.values .container{
+    max-width: 1020px;
+}
+.values .title-wrap{
+    padding: 141px 0 26px 0; 
+}
+.values h3{
+    margin: 0 0 18px 0;   
+}
+.values-item{
+    padding-left: 90px;
+    padding-bottom: 59px;
+}
+.values-item h6{
+    font-weight: 900;
+    font-size: 26px;
+    padding: 6px 0 6px 0;
+}
+.values-item p{
+    font-size:19px;
+    color:#555555;
+}
+@media(max-width:992px){
+    .values-item{
+        padding-left:15px;
+        text-align:center;
+    }
+}
+
