@@ -130,6 +130,95 @@ header a:hover{
     font-size:19px;
     color:#555555;
 }
+.our-team .container, .advisors .container{
+    max-width:800px;
+    padding-bottom: 60px;
+}
+.our-team .title-wrap, .advisors .title-wrap{
+    padding-bottom:32px;  
+}
+.people-item{
+    position:relative;
+}
+.people-desc{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+}
+.people-desc .bio{
+    width: 300px;
+    background-color: rgb(98, 0, 234);
+    box-shadow: rgba(38, 50, 56, 0.19) 0px 10px 20px 0px, rgba(38, 50, 56, 0.26) 0px 6px 6px 0px;
+    top: -260px;
+    left: -40px;
+    z-index: 1;
+    position: relative;
+    display: block;
+    border-radius: 6px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 20px;
+    color:#fff;
+}
+.people-item:hover .people-desc{
+    visibility: visible;
+    opacity: 1;
+}
+.people-desc .bio h4{
+    padding-bottom:25px;
+}
+.people-desc .bio h5{
+    padding-bottom:42px;
+}
+.social-link{
+    width:58px;
+    height:58px;
+    background:#fff;
+    border-radius: 50%;
+    border:8px solid #bbbbbb;
+
+}
+.social-link i{
+    color:#777;
+}
+.sign-in-block{
+    text-align:center;
+}
+.sign-in-block p{
+    font-size: 23px;
+    font-weight: 500;
+    color: #000;
+    padding-top: 63px;
+}
+.sign-in-block p.networks{
+        color: #999;
+    padding-top: 17px;
+    font-size: 18px;
+}
+.sign-in-block p.networks a{
+   color:#6122e6; 
+   margin:0 0 0 5px;
+}
+.sign-in-block .btn{
+    width:218px;
+    height:65px;
+    border-radius: 3px;
+    background:#6122e6;
+    color:#fff;
+    font-weight:700;
+    line-height:50px;
+    font-size:20px
+}
+.sign-in-block .btn:hover{
+    background:#2203b0;
+}
 @media(max-width:992px){
     .values-item{
         padding-left:15px;
