@@ -55,6 +55,10 @@ h3{
 }
 header{
     background-image: linear-gradient(to right top, #60059c, #5702a1, #4b00a5, #3c00aa, #2602af);
+    position:relative;
+}
+header #particles-js{
+    background:transparent;
 }
 .top-navigation-header .container{
     max-width:1350px;
@@ -424,6 +428,19 @@ header a:hover{
 }
 .slick-prev:before, .slick-next:before {
     color:black;
+}
+/*****foooter****/
+li{
+    list-style: none;
+}
+footer .footer{
+    padding-top:150px;
+    padding-bottom:50px;
+}
+.footer-logo{
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight:700px;
 }
 @media (min-width: 1025px){
     .timeline .event .empty {
