@@ -57,6 +57,10 @@ header{
     background-image: linear-gradient(to right top, #60059c, #5702a1, #4b00a5, #3c00aa, #2602af);
     position:relative;
 }
+header .container{
+    position:relative;
+    z-index: 10000;
+}
 header #particles-js{
     background:transparent;
 }
