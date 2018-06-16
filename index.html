@@ -103,13 +103,19 @@ and open the template in the editor.
                 </div>
                 <div class="stc-slider variable-width">
                     <div>
-                        <img src="images/Frame.png" alt=""/>
+                        <figure>
+                            <img src="images/Frame.png" alt=""/>
+                        </figure>
                     </div>
                     <div>
-                        <img src="images/ethical.png" alt=""/>
+                        <figure>
+                            <img src="images/ethical.png" alt=""/>
+                        </figure>
                     </div>
                     <div>
-                        <img src="images/network.png" alt=""/>
+                        <figure>
+                            <img src="images/network.png" alt=""/>
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -456,8 +462,10 @@ and open the template in the editor.
                                 slidesToShow: 1,
                                 slidesToScroll: 1,
                                 infinite: true,
+                                variableWidth: false,
+                                autoplay: true,
                                 dots: true,
-                               arrows:false
+                                arrows: false,
                             }
                         }
                         // You can unslick at a given breakpoint now by adding:

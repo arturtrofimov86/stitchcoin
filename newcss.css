@@ -525,6 +525,13 @@ footer .footer{
 }
 }
 @media(max-width:640px){
+    .slick-slide figure{
+        width:100%;
+    }
+    .slick-slide figure img{
+        width:100%;
+        max-width:100%
+    }
     .intro-title {
         padding: 50px 0 0 0;
     }
