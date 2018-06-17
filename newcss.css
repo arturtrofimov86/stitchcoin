@@ -516,27 +516,24 @@ footer .footer{
         left: calc(15% - 15px);
         right: initial;
     }
-    .timeline .event:nth-child(2n+1) .content::before {
-        right:100%;
-        border-right-color: rgb(236, 239, 241);
-        right: 100% !important;
-    }
-
-    .timeline .event .content::before {
-        top: 50%;
-        content: " ";
-        height: 0px;
-        width: 0px;
-        position: absolute;
-        pointer-events: none;
-        margin-top: -10px;
-        right: 100%;
-        border-style: solid;
-        border-image: initial;
-        border-color: rgba(221, 221, 221, 0);
-        border-right-color: rgba(221, 221, 221, 0);
-        border-width: 10px;
-    }
+   .timeline .event .content::before {
+    top: 50%;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+    margin-top: -10px;
+    right: 100%;
+    border-style: solid;
+    border-image: initial;
+    border-color: rgba(221, 221, 221, 0);
+    border-width: 10px;
+}
+.timeline .event:nth-child(2n+1) .content::before, .timeline .event:nth-child(2n) .content::before {
+    left: auto;
+    border-right-color: rgb(236, 239, 241);
+    right: 100% !important;
 }
 @media(max-width:992px){
     .people-item figure {
