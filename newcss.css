@@ -586,7 +586,8 @@ footer .footer{
         padding:10px;
     }
     .timeline .event .time-wrapper .time {
-        width: 70px;
+        width: 66px;
+        font-size: 12px;
     }
 }
 @media(max-width:640px){
