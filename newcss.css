@@ -77,9 +77,9 @@ header .spn-mobile-dropdown-menu, header .ml-auto{
     margin:0 !important;
 }
 .top-navigation-header{
-border-bottom: 1px solid #713ab2;
-position: relative;
-z-index: 10000;
+    border-bottom: 1px solid #713ab2;
+    position: relative;
+    z-index: 10000;
 }
 header .navbar{
     width: 100%;
@@ -497,21 +497,6 @@ footer .footer{
         flex-flow: row-reverse nowrap;
     }
 }
-@media(max-width:992px){
-    .values-item{
-        padding-left:15px;
-        text-align:center;
-    }
-    .spn-mobile-dropdown-menu{
-        position: absolute;
-        left: 0;
-        right: 0;
-        background: #6122e6;
-        top: 56px;
-        z-index: 100000;
-        text-align: center;
-    }
-}
 
 @media(max-width:1024px){
     header .sign-member {
@@ -527,28 +512,31 @@ footer .footer{
     .timeline .event:nth-child(2n){
         flex-direction:row-reverse;
     }
-
+    .timeline .decorative {
+        left: calc(15% - 15px);
+        right: initial;
+    }
     .timeline .event:nth-child(2n+1) .content::before {
-    right:100%;
-    border-right-color: rgb(236, 239, 241);
-    right: 100% !important;
+        right:100%;
+        border-right-color: rgb(236, 239, 241);
+        right: 100% !important;
+    }
 
-    
-.timeline .event .content::before {
-    top: 50%;
-    content: " ";
-    height: 0px;
-    width: 0px;
-    position: absolute;
-    pointer-events: none;
-    margin-top: -10px;
-    right: 100%;
-    border-style: solid;
-    border-image: initial;
-    border-color: rgba(221, 221, 221, 0);
+    .timeline .event .content::before {
+        top: 50%;
+        content: " ";
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        pointer-events: none;
+        margin-top: -10px;
+        right: 100%;
+        border-style: solid;
+        border-image: initial;
+        border-color: rgba(221, 221, 221, 0);
         border-right-color: rgba(221, 221, 221, 0);
-    border-width: 10px;
-}
+        border-width: 10px;
+    }
 }
 @media(max-width:992px){
     .people-item figure {
@@ -561,6 +549,30 @@ footer .footer{
         left:0;
         top:0;
     }
+    .header .navbar{
+        padding: .5rem 1rem;
+    }
+    header .nav-link {
+        font-size: 20px;
+        margin: 0 0px 8px 0;
+    }
+    header .sign-member {
+        margin: 0 0px 28px 0;
+        font-size: 20px;
+    }
+    .values-item{
+        padding-left:15px;
+        text-align:center;
+    }
+    .spn-mobile-dropdown-menu{
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #6122e6;
+        top: 56px;
+        z-index: 100000;
+        text-align: center;
+    }
 }
 @media(max-width:800px){
     .gallery-logo figure{
@@ -571,6 +583,7 @@ footer .footer{
 @media(max-width:767px){
     .timeline .event .content{
         font-size:14px;
+        padding:10px;
     }
 }
 @media(max-width:640px){
