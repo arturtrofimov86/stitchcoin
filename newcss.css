@@ -212,10 +212,11 @@ header a:hover{
     font-weight: 500;
     color: #000;
     padding-top: 63px;
+    padding-bottom: 63px;
 }
 .sign-in-block p.networks{
     color: #999;
-    padding-top: 17px;
+    padding-top: 63px;
     font-size: 18px;
 }
 .sign-in-block p.networks a{
@@ -465,6 +466,11 @@ footer .footer{
     font-weight: 700;
     line-height:30px;
 }
+@media(max-width:1368px){
+    header .navbar{
+        padding: 8px 43px 11px 43px;
+    }  
+}
 @media (min-width: 1025px){
     .timeline .event .empty {
         width: 40%;
@@ -543,89 +549,96 @@ footer .footer{
         right: 100% !important;   
     }
 }
-    @media(max-width:992px){
-        .people-item figure {
-            max-height:100%;
-            max-width:100%;
-        }
-        .people-desc, .people-desc .bio{
-            width:100%;
+@media(max-width:992px){
+    .people-item figure {
+        max-height:100%;
+        max-width:100%;
+    }
+    .people-desc, .people-desc .bio{
+        width:100%;
 
-            left:0;
-            top:0;
-        }
-        .header .navbar{
-            padding: .5rem 1rem;
-        }
-        header .nav-link {
-            font-size: 20px;
-            margin: 0 0px 8px 0;
-        }
-        header .sign-member {
-            margin: 0 0px 28px 0;
-            font-size: 20px;
-        }
-        .values-item{
-            padding-left:15px;
-            text-align:center;
-        }
-        .spn-mobile-dropdown-menu{
-            position: absolute;
-            left: 0;
-            right: 0;
-            background: #6122e6;
-            top: 56px;
-            z-index: 100000;
-            text-align: center;
-        }
+        left:0;
+        top:0;
     }
-    @media(max-width:800px){
-        .gallery-logo figure{
-            width:100%;
-            text-align: center;
-        }
+    .header .navbar{
+        padding: .5rem 1rem;
     }
-    @media(max-width:767px){
-        .timeline .event .content{
-            font-size:14px;
-            padding:10px;
-        }
-        .timeline .event .time-wrapper .time {
-            width: 66px;
-            font-size: 12px;
-        }
+    header .nav-link {
+        font-size: 20px;
+        margin: 0 0px 8px 0;
     }
-    @media(max-width:640px){
-        .slick-slide figure{
-            width:100%;
-        }
-        .slick-slide figure img{
-            width:100%;
-            max-width:100%
-        }
-        .intro-title {
-            padding: 50px 0 0 0;
-        }
-        h1 {
-            font-size: 24pt;
-        }
-        .intro-video {
-            padding-top: 40px;
-        }
-        .title-wrap{
-            padding:50px 0 30px 0;
-        }
-        h3{
-            font-size:28px;
-        }
-        .title-wrap p{
-            font-size: 16px;
-            line-height: 22px;
-        }
-        .footer{
-            padding-top:50px;
-        }
-        .footer .col-sm-12{
-            text-align: center;
-        }
+    header .sign-member {
+        margin: 0 0px 28px 0;
+        font-size: 20px;
     }
+    .values-item{
+        padding-left:15px;
+        text-align:center;
+    }
+    .spn-mobile-dropdown-menu{
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #6122e6;
+        top: 56px;
+        z-index: 100000;
+        text-align: center;
+    }
+}
+@media(max-width:800px){
+    .gallery-logo figure{
+        width:100%;
+        text-align: center;
+    }
+}
+@media(max-width:767px){
+    .timeline .event .content{
+        font-size:14px;
+        padding:10px;
+    }
+    .timeline .event .time-wrapper .time {
+        width: 66px;
+        font-size: 12px;
+    }
+    .sign-in-block p, .sign-in-block p.networks{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    footer .footer {
+        padding-top: 50px;
+    }
+}
+@media(max-width:640px){
+    .slick-slide figure{
+        width:100%;
+    }
+    .slick-slide figure img{
+        width:100%;
+        max-width:100%
+    }
+    .intro-title {
+        padding: 50px 0 0 0;
+    }
+    h1 {
+        font-size: 24pt;
+    }
+    .intro-video {
+        padding-top: 40px;
+    }
+    .title-wrap{
+        padding:50px 0 30px 0;
+    }
+    h3{
+        font-size:28px;
+    }
+    .title-wrap p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .footer{
+        padding-top:50px;
+    }
+    .footer .col-sm-12{
+        text-align: center;
+    }
+}
